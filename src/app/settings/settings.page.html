@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-100>
+        <ion-list>
+          <form (ngSubmit)="saveForm()">
+            <ion-item>
+              <ion-label fixed>
+                city
+              </ion-label>
+              <ion-input [(ngModel)]="city" name="city" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label fixed>
+                state
+              </ion-label>
+              <ion-input [(ngModel)]="state" name="state" type="text"></ion-input>
+            </ion-item>
+            <ion-item>
+              <button ion-button type="submit" block>Save changes</button>
+            </ion-item>
+          </form>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <app-explore-container name="Tab 2 page"></app-explore-container>
+</ion-content>

@@ -1,7 +1,8 @@
 {
   "name": "iweather",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
